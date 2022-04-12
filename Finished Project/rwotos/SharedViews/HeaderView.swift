@@ -45,7 +45,7 @@ class HeaderView: UICollectionReusableView {
 
 extension HeaderView {
   func configure() {
-    backgroundColor = .systemBackground
+    backgroundColor = .black
 
     addSubview(label)
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -59,5 +59,6 @@ extension HeaderView {
       label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -inset)
     ])
     label.font = UIFont.preferredFont(forTextStyle: .title3)
+    label.textColor = .lightText
   }
 }

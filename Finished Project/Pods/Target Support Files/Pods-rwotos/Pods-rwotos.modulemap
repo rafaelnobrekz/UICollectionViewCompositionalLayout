@@ -1,0 +1,6 @@
+framework module Pods_rwotos {
+  umbrella header "Pods-rwotos-umbrella.h"
+
+  export *
+  module * { export * }
+}

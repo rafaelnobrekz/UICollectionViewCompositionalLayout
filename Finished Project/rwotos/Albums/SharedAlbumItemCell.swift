@@ -103,19 +103,20 @@ extension SharedAlbumItemCell {
     titleLabel.text = title
     titleLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
     titleLabel.adjustsFontForContentSizeCategory = true
+    titleLabel.textColor = .white
     contentContainer.addSubview(titleLabel)
 
     ownerLabel.translatesAutoresizingMaskIntoConstraints = false
     ownerLabel.text = "From \(owner.name())"
     ownerLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
     ownerLabel.adjustsFontForContentSizeCategory = true
-    ownerLabel.textColor = .placeholderText
+    ownerLabel.textColor = .lightText
     contentContainer.addSubview(ownerLabel)
 
     ownerAvatar.translatesAutoresizingMaskIntoConstraints = false
     ownerAvatar.image = owner.avatar()
     ownerAvatar.layer.cornerRadius = 15
-    ownerAvatar.layer.borderColor = UIColor.systemBackground.cgColor
+    ownerAvatar.layer.borderColor = UIColor.black.cgColor
     ownerAvatar.layer.borderWidth = 1
     ownerAvatar.clipsToBounds = true
     contentContainer.addSubview(ownerAvatar)

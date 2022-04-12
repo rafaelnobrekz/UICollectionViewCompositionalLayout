@@ -50,7 +50,7 @@ class PhotoDetailViewController: UIViewController {
 
       imageView.translatesAutoresizingMaskIntoConstraints = false
       view.addSubview(imageView)
-      view.backgroundColor = .systemBackground
+      view.backgroundColor = .black
 
       NSLayoutConstraint.activate([
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

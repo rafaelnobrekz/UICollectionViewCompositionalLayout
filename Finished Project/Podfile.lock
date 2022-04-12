@@ -1,0 +1,36 @@
+PODS:
+  - DiffableDataSources (0.5.0):
+    - DifferenceKit/AppKitExtension (~> 1.1)
+    - DifferenceKit/UIKitExtension (~> 1.1)
+  - DifferenceKit/Core (1.2.0)
+  - DifferenceKit/UIKitExtension (1.2.0):
+    - DifferenceKit/Core
+  - IBPCollectionViewCompositionalLayout (0.6.9)
+
+DEPENDENCIES:
+  - DiffableDataSources
+  - IBPCollectionViewCompositionalLayout (from `https://github.com/rafaelnobrekz/IBPCollectionViewCompositionalLayout`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - DiffableDataSources
+    - DifferenceKit
+
+EXTERNAL SOURCES:
+  IBPCollectionViewCompositionalLayout:
+    :branch: master
+    :git: https://github.com/rafaelnobrekz/IBPCollectionViewCompositionalLayout
+
+CHECKOUT OPTIONS:
+  IBPCollectionViewCompositionalLayout:
+    :commit: b3c001e24b7a76dca614b36d774696262c844eb7
+    :git: https://github.com/rafaelnobrekz/IBPCollectionViewCompositionalLayout
+
+SPEC CHECKSUMS:
+  DiffableDataSources: 1ddde2de1978cc02619b2c3bfafab20e68b57279
+  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
+  IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
+
+PODFILE CHECKSUM: ea743df6bf8b7d3b4837fb1610ef8d29f132b196
+
+COCOAPODS: 1.11.2

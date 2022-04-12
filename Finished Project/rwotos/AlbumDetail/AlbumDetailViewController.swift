@@ -58,7 +58,7 @@ extension AlbumDetailViewController {
     let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: generateLayout())
     view.addSubview(collectionView)
     collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-    collectionView.backgroundColor = .systemBackground
+    collectionView.backgroundColor = .black
     collectionView.delegate = self
     collectionView.register(PhotoItemCell.self, forCellWithReuseIdentifier: PhotoItemCell.reuseIdentifer)
     collectionView.register(SyncingBadgeView.self,

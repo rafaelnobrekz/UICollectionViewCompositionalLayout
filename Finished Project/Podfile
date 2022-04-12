@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.4'
+
+target 'rwotos' do
+  use_frameworks!
+
+  pod 'IBPCollectionViewCompositionalLayout', :git => 'https://github.com/rafaelnobrekz/IBPCollectionViewCompositionalLayout', :branch => 'master'
+  pod 'DiffableDataSources'
+
+end

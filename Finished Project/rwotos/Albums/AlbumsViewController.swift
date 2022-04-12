@@ -50,6 +50,7 @@ class AlbumsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.title = "Your Albums"
+    navigationController?.navigationBar.backgroundColor = .gray
     configureCollectionView()
     configureDataSource()
   }
@@ -60,7 +61,7 @@ extension AlbumsViewController {
     let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: generateLayout())
     view.addSubview(collectionView)
     collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-    collectionView.backgroundColor = .systemBackground
+    collectionView.backgroundColor = .black
     collectionView.delegate = self
     collectionView.register(AlbumItemCell.self, forCellWithReuseIdentifier: AlbumItemCell.reuseIdentifer)
     collectionView.register(FeaturedAlbumItemCell.self, forCellWithReuseIdentifier: FeaturedAlbumItemCell.reuseIdentifer)

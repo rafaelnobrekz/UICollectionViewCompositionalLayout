@@ -82,6 +82,7 @@ extension FeaturedAlbumItemCell {
     titleLabel.text = title
     titleLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
     titleLabel.adjustsFontForContentSizeCategory = true
+    titleLabel.textColor = .white
     contentContainer.addSubview(titleLabel)
 
     imageCountLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -90,7 +91,7 @@ extension FeaturedAlbumItemCell {
     }
     imageCountLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
     imageCountLabel.adjustsFontForContentSizeCategory = true
-    imageCountLabel.textColor = .placeholderText
+    imageCountLabel.textColor = .lightText
     contentContainer.addSubview(imageCountLabel)
 
     let spacing = CGFloat(10)
